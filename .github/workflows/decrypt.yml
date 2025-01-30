@@ -21,8 +21,19 @@ jobs:
       - name: Check sops version
         run: sops --version
 
-      - name: Decrypt
-        run: ./decrypt.sh
+      - name: Decrypt - Prod
+        env:
+          SOPS_AGE_KEY: ${{ secrets.AGE_KEY_01_PROD }}
+        run: |
+          sops --decrypt --output=config/service_a/prod/main.yaml config/service_a/prod/main.encrypted.yaml
+          sops --decrypt --output=config/service_a/prod/main.json config/service_a/prod/main.encrypted.json
+
+      - name: Decrypt - Stg
+        env:
+          SOPS_AGE_KEY: ${{ secrets.AGE_KEY_01_STG }}
+        run: |
+          sops --decrypt --output=config/service_a/stg/main.yaml config/service_a/stg/main.encrypted.yaml
+          sops --decrypt --output=config/service_a/stg/main.json config/service_a/stg/main.encrypted.json
 
       - name: Show decrypted files
         run:  find config -name '*.json' -not -path '*encrypted*' | xargs -I{} sh -c 'ls -lh {}; cat {}'
