@@ -1,0 +1,14 @@
+---
+X_SHARE_RULE: &share_rule
+  encrypted_regex: "^(id.*|password.*|secret.*|token.*|api_key.*)$"
+creation_rules:
+  - path_regex: ".*/prod/.*.(yaml|json)$"
+    <<: *share_rule
+    age: >-
+      age1ug60snr5rv6rh843w54j6x4q783n80vtrjr3zukepx2arzt6n98q8773sw,
+      age1ndlj3cf8jdlzxx35v6lxf7uk0wflvhnsaq3jm8nxjkxtnyd3jqjstvgh73
+  - path_regex: ".*/stg/.*.(yaml|json)$"
+    <<: *share_rule
+    age: >-
+      age1jnk86suj3far33as8n9drfr9wnm8pyeevwuvvpj9xmxu5ctjaugqy5hzma,
+      age1fapm4qvdmc5gktgrrkz6z8hkn97kwu6v6xdgqnt3dg5xftxsge0qym7xu5

@@ -1,0 +1,8 @@
+id: stg_123
+password: 333
+structure01:
+    - host: localhost
+      api_key: stg_aaa
+structure02:
+    host: localhost
+    api_key: stg_bbb

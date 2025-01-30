@@ -1,0 +1,35 @@
+{
+	"id": "ENC[AES256_GCM,data:cIlDn6plFw==,iv:PpO7YvhrQe3T7RxGSDXBRklBGzdrGyxNbySAXnodhCY=,tag:5e79WQqpKh/CD67gM1iUUQ==,type:str]",
+	"password": "ENC[AES256_GCM,data:q6yu,iv:Ta0c6BZFmq9TCQfdLcFgUKUKzVA4a22OfMEFXueogro=,tag:PuiKjZtMyir9vbIFqmZxQA==,type:float]",
+	"structure01": [
+		{
+			"host": "localhost",
+			"api_key:": "ENC[AES256_GCM,data:NMYbdxXd+A==,iv:vi0CsbSlhFTNlmO4ymPPY2A/vuPpX//7q1bfZuOMUSs=,tag:FlIH0ILWawcxHLqtsH9KLA==,type:str]"
+		}
+	],
+	"structure02": {
+		"host": "localhost",
+		"api_key:": "ENC[AES256_GCM,data:4vTQCmc8sQ==,iv:/QFP7OuI7W/rqtw+OklNAcX1xzKPRXVvPKjp4+0NjIY=,tag:oadALRaxndjsa7mDcbkaSA==,type:str]"
+	},
+	"sops": {
+		"kms": null,
+		"gcp_kms": null,
+		"azure_kv": null,
+		"hc_vault": null,
+		"age": [
+			{
+				"recipient": "age1jnk86suj3far33as8n9drfr9wnm8pyeevwuvvpj9xmxu5ctjaugqy5hzma",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArY0lWazRmakVSWVdjM1pI\neXNMY3RMYzMva0xSUlhaSk9haXFrNEM4cDBvCmUwYVNjNXpGQTZQdEp3aklDb2hp\nNk9sSkNEUjYxZlE2NVhvcmZmRzdyRzgKLS0tICtZaEFRVElkTmsvVkpYcjNNaXFJ\nRFNObkJrekhmNWZxNW1SUUp4ODZldkEKMkqTeUekjEly3hQoN6iebMOPnkQqzbN9\nYo9mk0ohK+2sZJOjz8XibcKtbkIIYVHZ+Q/GwZIZLNKq5fR5MaTI1A==\n-----END AGE ENCRYPTED FILE-----\n"
+			},
+			{
+				"recipient": "age1fapm4qvdmc5gktgrrkz6z8hkn97kwu6v6xdgqnt3dg5xftxsge0qym7xu5",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsUEcwZFhZWnlOUC9HVUlO\nRnlrL2dhVkpBQUx5RUZBWDZxSVV3VlhOdlVNCnN5SFE4QWhNS0p6Q0s5TFpXVjI1\nS09JenRRVkdwSzF4akhXaWZ6MUlHZkkKLS0tIHFqeTRpVkwwN0tVbUNtYWtWYmNF\nd1JHQWh6aVY3KzFvK1pNTjlOSVJFb3cKhws8mOUm6gsi8IyUQyYKFN1zaXcc2/eJ\nGSTbGZNUE7OPYWPMi0sacjNyZ4nb7l9GCRNXhZcTfoqT142DNo5Q2A==\n-----END AGE ENCRYPTED FILE-----\n"
+			}
+		],
+		"lastmodified": "2025-01-30T17:42:47Z",
+		"mac": "ENC[AES256_GCM,data:+9yJ1Ji6WLlPcI0KrVp8ks1gIUQtlaruCzuOsIGaR35Eb5fFUm9X7KEkMI32WiYzhPUwrAjlZXUWPqofYSFQUIOux8PV2PlUCC8x7xIQr1wNeTq243Anm6Xc5BmSKhPax4zpq0CmYP58t7Y8tkSphUaXJOUazhW2P3UzJ+ierLk=,iv:BxSffneljI2SArEtuqBbXmq0OJKX/OEcVvtoIx36k6g=,tag:HvWxFOUrNYs/5vPsHUDVpA==,type:str]",
+		"pgp": null,
+		"encrypted_regex": "^(id.*|password.*|secret.*|token.*|api_key.*)$",
+		"version": "3.9.4"
+	}
+}

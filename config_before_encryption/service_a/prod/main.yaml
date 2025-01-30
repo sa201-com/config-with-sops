@@ -1,0 +1,8 @@
+id: prod_123
+password: 333
+structure01:
+    - host: localhost
+      api_key: prod_aaa
+structure02:
+    host: localhost
+    api_key: prod_bbb

@@ -1,0 +1,37 @@
+id: ENC[AES256_GCM,data:RU5BSHebPlE=,iv:uFSz8XX4V12wXfaZa8be3kYwarOkCQE00SoNvirP2O8=,tag:qZSUn4+QxpnCH5VWEWSnNA==,type:str]
+password: ENC[AES256_GCM,data:v5qf,iv:N5+V+keQahSJvganWrXS9pcs8ozMv1G3u4Lzn9GScq8=,tag:9XNJjgKW8UdJ48l8Nr7Xng==,type:int]
+structure01:
+    - host: localhost
+      api_key: ENC[AES256_GCM,data:lXu3EMHNAsA=,iv:1v4T4OYxxrTmrfp23pf2xN7imJkdP71dIvUPPPTTr0w=,tag:aTPEzPPgBbkcpAbWqaKY1Q==,type:str]
+structure02:
+    host: localhost
+    api_key: ENC[AES256_GCM,data:1BWDqOmr8pE=,iv:4tB/kWw5J7EVWNYHgiqB0/7F8WSgAxs5FCF/Q4eJFCI=,tag:O0ujMs10Y8bmw+mx2oA9ww==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1ug60snr5rv6rh843w54j6x4q783n80vtrjr3zukepx2arzt6n98q8773sw
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkM0grRXg3cjBOZTJtc2RB
+            d3ZvTnI4dTF4NXBUT0ZXQmlVbkFOZkxRQWh3CkVlaVpjTzRlWW0wMUdsUUQrSUZY
+            WXQ2OVo3M0kwQjQvbGRaT2R0UXVodFUKLS0tIFZYQkc1VVVpbXdiaDFicVpmVHNh
+            NXc5RGhUQ1lSaFcxcFZZdlFYdWJsdEkKguDOpG/+6/sfqkhqIX+LS3VdlXvjZkZD
+            dYQbMosCARiNxehDrUUknA2mytS1fXIoCfnGyTfX5UEcYEuLyqpOQQ==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age1ndlj3cf8jdlzxx35v6lxf7uk0wflvhnsaq3jm8nxjkxtnyd3jqjstvgh73
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZUENMMldWYy9TM0dtNkZ0
+            cXlqZmZqK2tPcSswY3J6N1pYeitPdFJpSUNrClRsOFpPRkpPSUUrd1MweURCUkZU
+            cGpDS0JhMTRBWnN3MnRWSlZZd2ZQN2MKLS0tIHR0SExmM0hlK2JkRnVYUG1zdEY0
+            MlloMnJldHkvaklIaVBmV01qVDdiTUkKQJibPNn8PQinKxHCpJBVAbs5cak1LkwI
+            elayiNaCFsoPHh0+JLSyy49cyzYue+LnrN4x0Ef9goR3wHI6HEmk8A==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-30T17:42:47Z"
+    mac: ENC[AES256_GCM,data:QN2H4ugd6583YSDi3d5nfqLweKI5jjOGd73kvQZWo9hWszJ3Os0e75/o2CaRbGv1LUEBQNXRlCtGfkxXEoSf43zQAaN6OzsxOPinsO5KWyYI+OP965fVaD8mL1iqxHE8AKSvxQ5I55gsHiriwHbO2RkGXRQNK+P7OdiaETbbwP0=,iv:aG/GVqD8DjdQktBiTSExZn0UJZgw82E4mlIMKZzxh6Q=,tag:j7785uomwpV5S7AOkodRZQ==,type:str]
+    pgp: []
+    encrypted_regex: ^(id.*|password.*|secret.*|token.*|api_key.*)$
+    version: 3.9.4

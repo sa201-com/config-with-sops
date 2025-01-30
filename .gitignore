@@ -1,0 +1,6 @@
+/config/**
+!/config/*.encrypted.json
+!/config/*.encrypted.yaml
+
+/.idea/
+*.iml

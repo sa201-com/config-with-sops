@@ -1,0 +1,29 @@
+name: decrypt-on-github
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show encrypted files
+        run:  find config -name '*.encrypted.json' | xargs -I{} sh -c 'ls -lh {}; cat {}'
+
+      - name: Setup SOPS
+        uses: nhedger/setup-sops@v2
+        with:
+          version: "latest"
+          token: ${{ github.token }}
+
+      - name: Check sops version
+        run: sops --version
+
+      - name: Decrypt
+        run: ./decrypt.sh
+
+      - name: Show decrypted files
+        run:  find config -name '*.json' -not -path '*encrypted*' | xargs -I{} sh -c 'ls -lh {}; cat {}'
+
